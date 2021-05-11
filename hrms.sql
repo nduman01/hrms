@@ -193,6 +193,6 @@ VALUES ('Software Developer'),('Software Architect');
 DO $$
     DECLARE user_id integer;
 BEGIN
-	INSERT INTO "public"."users" (email,password) VALUES('karcanozbal@outlook.com.tr','123456') RETURNING id INTO user_id;
-	INSERT INTO "public"."candidates" (id,first_name,last_name,identity_number,birth_date) VALUES(user_id,'karcan','özbal','12312312311','1993-11-16');
+	INSERT INTO "public"."users" (email,password) VALUES('duman.nazim@gmail.com','12345') RETURNING id INTO user_id;
+	INSERT INTO "public"."candidates" (id,first_name,last_name,identity_number,birth_date) VALUES(user_id,'ahmet','elibol','12345678901','1980-01-01');
 END $$;
